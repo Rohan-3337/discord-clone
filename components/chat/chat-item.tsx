@@ -55,7 +55,7 @@ export const ChatItem = ({id,content,member,timestamp,fileUrl,deleted,currentMem
         form.reset({
             content:content,
         })
-    },[content]);
+    },[content,form]);
 
     const OnMemberClick = () =>{
         try {
@@ -70,7 +70,7 @@ export const ChatItem = ({id,content,member,timestamp,fileUrl,deleted,currentMem
     useEffect(()=>{
         const handleKeyDown = (event:any) =>{
             if(event.key === "Escape" || event.keyCode ===27){
-                console.log("hellllllll");
+                
                 setIsEdting(false);
             }
         }

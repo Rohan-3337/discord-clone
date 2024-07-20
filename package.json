@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "postinstall": "npm ci --omit=dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+
   },
   "dependencies": {
     "@clerk/nextjs": "^5.1.6",
